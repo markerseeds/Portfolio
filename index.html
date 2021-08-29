@@ -1,155 +1,133 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Kelvin Portfolio</title>
+  </head>
+  
+  <body>
+    <nav id="mainNavBar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="#" class="navbar-brand">KELVIN SEE</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+          <a href="" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	<title>Portfolio</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Special+Elite&display=swap" rel="stylesheet">
-</head>
-<body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
-	  <a class="navbar-brand" href="#home">Kelvin See</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#projects">Projects</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#contact">Contact</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+            <h1 class="text-center">Analyst Programmer</h1>
+            <h1 class="text-center">Computer Engineering</h1>
+            <h1 class="text-center">De La Salle University</h1>
+			<h1 class="text-center">Hong Kong</h1>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="imgs/me.jpg" alt="">
+        </div>
+      </div>
+    </section>
 
-	<!-- About -->
-	<div class="jumbotron jumbotron-fluid bg-muted text-center" id="about">
-	  <div class="container">
-	  	<div class="row justify-content-center">
-	  		<div class="col-12 col-md-6">
-			  	<img src="./images/me.jpg" alt="professional-photo" class="rounded-circle" height="200" width="200">
-			    <h1 class="display-4">Kelvin See</h1>
-			    <p class="lead">Analyst Programmer</p>
-			    <a class="btn btn-dark" href="#projects">VIEW MY PROJECTS</a>
-			</div>
-			<div class="col-12 col-md-6">
-				<h2 class="text-left px-3 pt-5 pb-3">
-					EVERY PROBLEM HAS A SOLUTION
-				</h2>
-				<p class="text-left px-3">
-					Computer Engineer
-					<br>
-					De La Salle University
-					<br>
-					Born in the Philippines
-					<br>
-					Currently working in Kerry Logistics, Hong Kong
-				</p>
-			</div>
-		</div>
-	  </div>
-	</div>
-	
-	<!-- Projects -->
-	<!--<div class="container" id="projects">
-		<h1 class="text-center">Projects</h1>
-		<div class="row">
-			<div class="col d-flex justify-content-center">
-				<div class="card" style="width: 18rem;">
-				  <img src="./images/capstone1.jpg" class="card-img-top" alt="..." id="capstone">
-				  <div class="card-body">
-				    <h5 class="card-title">Capstone 1</h5>
-				    <p class="card-text">This is my Front-end development.</p>
-				    <a href="#" class="btn btn-dark">See more</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col d-flex justify-content-center">	
-				<div class="card" style="width: 18rem;">
-				  <img src="./images/capstone2.jpg" class="card-img-top" alt="..." id="capstone">
-				  <div class="card-body">
-				    <h5 class="card-title">Capstone 2</h5>
-				    <p class="card-text">This is my Back-end development.</p>
-				    <a href="#" class="btn btn-dark">See more</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col d-flex justify-content-center">
-				<div class="card" style="width: 18rem;">
-				  <img src="./images/capstone3.jpg" class="card-img-top" alt="..." id="capstone">
-				  <div class="card-body">
-				    <h5 class="card-title">Capstone 3</h5>
-				    <p class="card-text">This is my webpage development.</p>
-				    <a href="#" class="btn btn-dark">See more</a>
-				  </div>
-				</div>
-			</div>	
-		</div>
-	</div>-->
+    <section class="container-fluid px-0">
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="imgs/kerry.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb">
+              <h2>Kerry Logistics</h2>
+			  <h3>Analyst Programmer</h3>
+			  <h4>May 2018 - Present</h4>
+              <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+              <p class="lead">- Provided on-going support, system analysis and improvements to a shipping website which is being used by many different customers</p>
+			  <p class="lead">- Managed and oversee systems and programs which are running on AWS architecture</p>
+			  <p class="lead">- RPA developer who starts from getting business requirements from operation personnel and creating an RPA program to lessen their workload</p>
+			  <p class="lead">- Implemented and created website design using Figma and presented designs to business users for approval</p>
+			  <p class="lead">- Evaluated and adopted new technologies to address changing industry needs (ex. Smart tracking, supply chain sensors)</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<!-- Contact -->
-	<div class="container col-12 bg-light my-3" id="contact">
-		<h1 class="text-center">Contact</h1>
-		<div class="row align-items-center justify-content-center">
-			<div class="col-12 col-md-4">
-				<form>
-				  <div class="form-group">
-				    <label for="fullname">Full Name</label>
-				    <input type="text" class="form-control" id="fullname" placeholder="Your Name">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Email address</label>
-				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-				  <div class="form-group">
-				    <label for="fullname">Contact Number</label>
-				    <input type="number" class="form-control" id="fullname" placeholder="Contact Number">
-				  </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlTextarea1">Message</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-				  </div>
-				  <button type="submit" class="btn btn-dark container-fluid">Send Message</button>
-				</form>
-			</div>
-		    </div>
-	    </div>
-	</div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center content">
+            <div class="col-10 col-lg-8 blurb">
+              <h2>Accenture</h2>
+			  <h3>Associate Software Engineer</h3>
+			  <h4>Mar 2017 - Mar 2018 (1 year 1 month)</h4>
+              <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+              <p class="lead">- Provided SAP SD support to Accenture clients around the globe</p>
+			  <p class="lead">- Catered to the demands of international in-house personnel regarding SD module of SAP</p>
+			  <p class="lead">- Translated business user requirements into SAP programs and enhancements</p>
+			  <p class="lead">- Hands-on with SAP SD configurations and full cycle development process</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="imgs/accenture.png" alt="" class="img-fluid">
+        </div>
+      </div>
 
-	<div style="height: 1px; background: silver;">
-	</div>
-	<!-- Footer -->
-	<footer>
-	    <span><a href="#home">Home</a></span>
-	    <span>&CenterDot;</span>
-	    <span><a href="#about">About</a></span>
-	    <span>&CenterDot;</span>
-	    <span><a href="#projects">Projects</a></span>
-	    <span>&CenterDot;</span>
-	    <span><a href="#contact">Contact</a></span>
-	</footer>
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-	<script src="./bootstrap.bundle.min.js"></script>
-</body>
+      <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+          <div class="col-md-6 order-2 order-md-1">
+            <img src="imgs/convergys.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 blurb">
+                <h2>Convergys</h2>
+				<h3>Web Developer (Intern)</h3>
+				<h4>Apr 2016 - Sept 2016 (6 months)</h4>
+                <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                <p class="lead">- Developed the back-end (PHP and MySQL) of the Employee Referral Program, ERP for short.</p>
+				<p class="lead">- Helped developed the front-end (HTML and CSS) of the website.</p>
+				<p class="lead">- Was given the responsibility to control and complete my own work within a specified time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $(document).scroll(function (){
+          var $nav = $("#mainNavBar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
+        })
+      })
+    </script>
+  </body>
 </html>
