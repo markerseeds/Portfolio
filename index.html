@@ -1,17 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
-    <link rel="stylesheet" href="app.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>Look at my pokemon!</h1>
-    <section id="container"></section>
-    <script src="app.js"></script>
-</body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+	  <a class="navbar-brand" href="#home">Kelvin See</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#projects">Projects</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 
+	<!-- About -->
+	<div class="jumbotron jumbotron-fluid bg-muted text-center" id="about">
+	  <div class="container">
+	  	<div class="row justify-content-center">
+	  		<div class="col-12 col-md-6">
+			  	<img src="./images/me.jpg" alt="professional-photo" class="rounded-circle" height="200" width="200">
+			    <h1 class="display-4">Kelvin See</h1>
+			    <p class="lead">Analyst Programmer</p>
+			    <a class="btn btn-dark" href="#projects">VIEW MY PROJECTS</a>
+			</div>
+			<div class="col-12 col-md-6">
+				<h2 class="text-left px-3 pt-5 pb-3">
+					EVERY PROBLEM HAS A SOLUTION
+				</h2>
+				<p class="text-left px-3">
+					Computer Engineer
+					<br>
+					De La Salle University
+					<br>
+					Born in the Philippines
+					<br>
+					Currently working in Kerry Logistics, Hong Kong
+				</p>
+			</div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Projects -->
+	<!--<div class="container" id="projects">
+		<h1 class="text-center">Projects</h1>
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<div class="card" style="width: 18rem;">
+				  <img src="./images/capstone1.jpg" class="card-img-top" alt="..." id="capstone">
+				  <div class="card-body">
+				    <h5 class="card-title">Capstone 1</h5>
+				    <p class="card-text">This is my Front-end development.</p>
+				    <a href="#" class="btn btn-dark">See more</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col d-flex justify-content-center">	
+				<div class="card" style="width: 18rem;">
+				  <img src="./images/capstone2.jpg" class="card-img-top" alt="..." id="capstone">
+				  <div class="card-body">
+				    <h5 class="card-title">Capstone 2</h5>
+				    <p class="card-text">This is my Back-end development.</p>
+				    <a href="#" class="btn btn-dark">See more</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col d-flex justify-content-center">
+				<div class="card" style="width: 18rem;">
+				  <img src="./images/capstone3.jpg" class="card-img-top" alt="..." id="capstone">
+				  <div class="card-body">
+				    <h5 class="card-title">Capstone 3</h5>
+				    <p class="card-text">This is my webpage development.</p>
+				    <a href="#" class="btn btn-dark">See more</a>
+				  </div>
+				</div>
+			</div>	
+		</div>
+	</div>-->
+
+	<!-- Contact -->
+	<div class="container col-12 bg-light my-3" id="contact">
+		<h1 class="text-center">Contact</h1>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-12 col-md-4">
+				<form>
+				  <div class="form-group">
+				    <label for="fullname">Full Name</label>
+				    <input type="text" class="form-control" id="fullname" placeholder="Your Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Email address</label>
+				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+				  <div class="form-group">
+				    <label for="fullname">Contact Number</label>
+				    <input type="number" class="form-control" id="fullname" placeholder="Contact Number">
+				  </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlTextarea1">Message</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-dark container-fluid">Send Message</button>
+				</form>
+			</div>
+		    </div>
+	    </div>
+	</div>
+
+	<div style="height: 1px; background: silver;">
+	</div>
+	<!-- Footer -->
+	<footer>
+	    <span><a href="#home">Home</a></span>
+	    <span>&CenterDot;</span>
+	    <span><a href="#about">About</a></span>
+	    <span>&CenterDot;</span>
+	    <span><a href="#projects">Projects</a></span>
+	    <span>&CenterDot;</span>
+	    <span><a href="#contact">Contact</a></span>
+	</footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script src="./bootstrap.bundle.min.js"></script>
+</body>
 </html>
